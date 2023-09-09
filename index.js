@@ -142,18 +142,22 @@ document.addEventListener('touchend', (e) => {
         if (deltaX > 0) {
             // Swipe right
             slideRight();
+            setTwo();
         } else {
             // Swipe left
             slideLeft();
+            setTwo();
         }
     } else if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > touchThreshold) {
         // Vertical swipe
         if (deltaY > 0) {
             // Swipe down
             slideDown();
+            setTwo();
         } else {
             // Swipe up
             slideUp();
+            setTwo();
         }
     }
 });
